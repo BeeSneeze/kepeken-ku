@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kepeken Ku")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70b38c560b22b7c6cc59de3a94bdb0ab30fdfdbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b7bbafb2ea58740b65f994bf7ed9334ec923353")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kepeken Ku")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kepeken Ku")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
