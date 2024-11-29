@@ -1,2 +1,2 @@
-﻿52345
-C:/Users/beatr/Downloads/Godot_v3.5.3-stable_mono_win64/Godot_v3.5.3-stable_mono_win64/Godot_v3.5.3-stable_mono_win64.exe
+﻿40367
+/home/johannes/godot3_dotnet/Godot_v3.5-stable_mono_x11_64/Godot_v3.5-stable_mono_x11.64
