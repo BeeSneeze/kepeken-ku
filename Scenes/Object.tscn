@@ -17,7 +17,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 961, 82 )
+extents = Vector2( 82, 82 )
 
 [node name="Object" type="StaticBody2D"]
 
@@ -25,5 +25,5 @@ extents = Vector2( 961, 82 )
 frames = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -2.5, 0 )
+position = Vector2( -2, -1 )
 shape = SubResource( 2 )
