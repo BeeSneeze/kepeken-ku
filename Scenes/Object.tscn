@@ -17,8 +17,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-resource_local_to_scene = true
-extents = Vector2( 87.5, 82 )
+extents = Vector2( 961, 82 )
 
 [node name="Object" type="StaticBody2D"]
 
