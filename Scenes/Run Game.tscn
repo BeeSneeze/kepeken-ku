@@ -16,4 +16,18 @@ position = Vector2( 429, 701 )
 position = Vector2( 1408, 453 )
 
 [node name="Object2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1431, 750 )
+position = Vector2( 1531, 829 )
+scale = Vector2( 2, 2 )
+
+[node name="CollisionShape2D" parent="Object2" index="1"]
+position = Vector2( -2, 39 )
+
+[node name="Object3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 77, 124 )
+scale = Vector2( 4, 2 )
+
+[node name="Object4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1922, 270 )
+scale = Vector2( 4, 2 )
+
+[editable path="Object2"]
