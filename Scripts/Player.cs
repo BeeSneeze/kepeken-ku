@@ -11,9 +11,11 @@ public class Player : Character
 	private static float Speed = 500.0f;
 
 	private Vector2 MoveVector = new Vector2(0,0);
+	private AnimatedSprite AnimSpr;
 
 	public override void _Ready()
 	{
+		AnimSpr = GetNode<AnimatedSprite>("AnimatedSprite");
 		MoveAndSlide(new Vector2(100,0));
 	}
 	
@@ -39,5 +41,13 @@ public class Player : Character
 		}
 
 		MoveAndSlide(MoveVector);
+		if(MoveVector.x > 0)
+		{
+			AnimSpr.FlipH = true;
+		}
+		if(MoveVector.x < 0)
+		{
+			AnimSpr.FlipH = false;
+		}
 	}
 }

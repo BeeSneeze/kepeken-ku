@@ -1,17 +1,18 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Character.cs" type="Script" id=1]
 [ext_resource path="res://Assets/Visuals/Lemur1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Visuals/Mushroom1.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/custom_label.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Visuals/Mushroom2.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Visuals/SpeechBubble1.png" type="Texture" id=6]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Player",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
@@ -20,7 +21,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 14, 42 )
+extents = Vector2( 11.5, 11.25 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -40,14 +41,14 @@ frames = SubResource( 2 )
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 18, 22 )
+position = Vector2( 11, 50 )
 scale = Vector2( 2, 2 )
 shape = SubResource( 1 )
 
 [node name="Speech Bubble" type="AnimatedSprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0.784314 )
-position = Vector2( 196, -126 )
-scale = Vector2( 0.8, 0.8 )
+position = Vector2( 181, -124 )
+scale = Vector2( 0.7, 0.7 )
 z_index = 10
 frames = SubResource( 3 )
 

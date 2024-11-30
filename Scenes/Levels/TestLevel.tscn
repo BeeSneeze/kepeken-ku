@@ -26,6 +26,7 @@
 [node name="TestLevel" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -1000
 tile_set = SubResource( 1 )
 cell_size = Vector2( 100, 100 )
 centered_textures = true
@@ -39,13 +40,13 @@ position = Vector2( 982, 678 )
 position = Vector2( 662, 533 )
 
 [node name="Object" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1562, 931 )
+position = Vector2( 1762, 1216 )
 
 [node name="Object3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1368, 929 )
+position = Vector2( 2571, 972 )
 
 [node name="Object4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 609, 885 )
+position = Vector2( 321, 832 )
 
 [node name="House" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1768, 272 )
