@@ -19,27 +19,25 @@ public class Player : Character
 	
 	public override void _PhysicsProcess(float delta)
 	{
-		
+		MoveVector = new Vector2(0,0);
+
 		if (Input.IsActionPressed("MoveUp"))
 		{
-			MoveAndSlide(new Vector2(0,-1 * Speed));
+			MoveVector += new Vector2(0,-1 * Speed);
 		}
-		else if(Input.IsActionPressed("MoveLeft"))
+		if(Input.IsActionPressed("MoveLeft"))
 		{
-			MoveAndSlide(new Vector2(-1 * Speed,0));
+			MoveVector += new Vector2(-1 * Speed,0);
 		}
-		else if(Input.IsActionPressed("MoveDown"))
+		if(Input.IsActionPressed("MoveDown"))
 		{
-			MoveAndSlide(new Vector2(0,Speed));
+			MoveVector += new Vector2(0,Speed);
 		}
-		else if(Input.IsActionPressed("MoveRight"))
+		if(Input.IsActionPressed("MoveRight"))
 		{
-			MoveAndSlide(new Vector2(Speed,0));
+			MoveVector += new Vector2(Speed,0);
 		}
+
+		MoveAndSlide(MoveVector);
 	}
-//  // Called every frame. 'delta' is the elapsed time since the previous frame.
-//  public override void _Process(float delta)
-//  {
-//      
-//  }
 }
