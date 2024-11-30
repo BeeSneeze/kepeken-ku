@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Object.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=4]
 
 [node name="Run Game" type="Node2D"]
 
@@ -13,7 +14,7 @@ position = Vector2( 982, 678 )
 position = Vector2( 429, 701 )
 
 [node name="Object" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1408, 453 )
+position = Vector2( 2373, 532 )
 
 [node name="Object2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1531, 829 )
@@ -27,7 +28,10 @@ position = Vector2( 77, 124 )
 scale = Vector2( 4, 2 )
 
 [node name="Object4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1922, 270 )
+position = Vector2( 2586, 1284 )
 scale = Vector2( 4, 2 )
+
+[node name="House" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1768, 272 )
 
 [editable path="Object2"]
