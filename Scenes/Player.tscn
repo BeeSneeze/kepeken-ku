@@ -11,12 +11,14 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" parent="." index="0"]
 position = Vector2( 6, 5 )
 animation = "Player"
-frame = 1
 flip_h = true
 
 [node name="CollisionShape2D" parent="." index="1"]
 position = Vector2( 2, 38 )
 shape = SubResource( 1 )
+
+[node name="Label" parent="Speech Bubble" index="0"]
+Message = "( kepeken ku ) li pona"
 
 [node name="Camera2D" type="Camera2D" parent="." index="3"]
 current = true

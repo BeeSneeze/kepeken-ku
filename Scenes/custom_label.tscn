@@ -2,8 +2,8 @@
 
 [ext_resource path="res://speech_bubble.tres" type="Theme" id=2]
 
-[sub_resource type="CSharpScript" id=1]
-script/source = "using Godot;
+[sub_resource type="CSharpScript" id=2]
+script/source = "susing Godot;
 using System;
 
 public class custom_label : Label
@@ -30,5 +30,5 @@ public class custom_label : Label
 margin_right = 40.0
 margin_bottom = 14.0
 theme = ExtResource( 2 )
-script = SubResource( 1 )
+script = SubResource( 2 )
 Message = "ku"
