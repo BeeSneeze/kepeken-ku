@@ -22,6 +22,7 @@ Message = "( kepeken ku ) li pona"
 
 [node name="Camera2D" type="Camera2D" parent="." index="3"]
 current = true
+zoom = Vector2( 0.9, 0.9 )
 process_mode = 0
 limit_left = -4000
 limit_top = -2000
