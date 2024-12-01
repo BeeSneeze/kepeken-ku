@@ -18,7 +18,7 @@ position = Vector2( 2, 38 )
 shape = SubResource( 1 )
 
 [node name="Label" parent="Speech Bubble" index="0"]
-Message = "( kepeken ku ) li pona"
+Message = "( kepeken ku ) li musi pona"
 
 [node name="Camera2D" type="Camera2D" parent="." index="3"]
 current = true

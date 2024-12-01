@@ -1,0 +1,71 @@
+{
+    "PersistentMessage": "Hello",
+    "EnterMessage": "AskFood",
+    "LeaveMessage": "Goodbye",
+    "Messages": {
+        "Hello": {
+            "Message": "toki !",
+            "Responses": [],
+            "Actions": [
+                "Say AskFood"
+            ]
+        },
+        "AskFood": {
+            "Message": "moku mi li pona ala pona",
+            "Responses": [
+                {
+                    "Response": [
+                        "pona",
+                        "moku pona"
+                    ],
+                    "Actions": [
+                        "Say thanks"
+                    ]
+                },
+                {
+                    "Response": [
+                        "ike",
+                        "moku ike",
+                        "ala",
+                        "moku pi pona ala",
+                        "moku pona ala",
+                        "pona ala"
+                    ],
+                    "Actions": [
+                        "Set EnterMessage AngryHello",
+                        "Set LeaveMessage AngryGoodbye",
+                        "Say Angry"
+                    ]
+                }
+            ],
+            "Actions": [
+                "Listen Player"
+            ]
+        },
+        "Goodbye": {
+            "Message": "tawa pona !",
+            "Responses": [],
+            "Actions": []
+        },
+        "Thanks": {
+            "Message": "pona tawa sina !",
+            "Responses": [],
+            "Actions": []
+        },
+        "Angry": {
+            "Message": "ike",
+            "Responses": [],
+            "Actions": []
+        },
+        "AngryHello": {
+            "Message": "sako ike o, toki",
+            "Responses": [],
+            "Actions": []
+        },
+        "AngryGoodbye": {
+            "Message": "o tawa",
+            "Responses": [],
+            "Actions": []
+        }
+    }
+}
